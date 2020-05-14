@@ -13,24 +13,8 @@ The following preprocessing was applied to each image:
 - Resized every image to 200 × 200 pixels from the input images of random sizes
 - Converted each image from RGB to GrayScale to have a single channel using `cv2.cvtColor`
 - Thresholding the image so that it appears as white on a black background for better feature extraction using `cv2.threshold`
-
-- After this , HOG was used to extract features from the images
-
-## Model Description
-For **Age Classification**, following are the details of the model: 
-
-1. 3x3 filter shape, 32 feature maps. Stride of 1 and 0 padding. Followed by: ReLU,Batch-Normalization,Max-Pool,Dropout of 0.25
-2. 3x3 filter shape, 64 feature maps. Followed by: Batch-Normalization
-3. 3x3 filter shape, 64 feature maps,stride 1 and padding 1. ReLU, Batch-Normalization,Max-Pool of size 2,Dropout of 0.25.
-4. 3x3 filter shape, 128 feature maps. Followed by: Batch-Normalization
-5. 3x3 filter shape, 128 feature maps. Followed by: Batch-Normalization
-6. 3x3 filter shape, 128 feature maps,stride 1 and padding 1. ReLU, Batch-Normalization,Max-Pool of size 2,Dropout of 0.25.
-7. Fully connected layer of 512 neurons. Followed by : ReLU,Batch Normalization, Dropout = 0.5. 
-8. Last layer maps to the 3 classes for age
-
-Trained with a learning rate of 0.01,Batch Size of 32 and with 75 to 100 epochs.
-Used Stochastic Gradient Descent (SGD) optimizer and 70% split of train and validation data.
-Used OpenCV library for image processing along with data visualization and augmentation.
+- After this , HOG was used to extract features from the images by using `feature.hog` function
+- For *Spiral* : `RandomForestClassifier` was used for fitting & For *Wave* : `KNeighborsClassifier` was used.
 
 ## Libraries Used
 1.OpenCV</br>
