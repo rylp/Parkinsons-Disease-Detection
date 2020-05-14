@@ -10,9 +10,9 @@ Used **Random Forest Classifier** for Spiral images in the dataset and **KNN** f
 The following preprocessing was applied to each image:
 
 - Have trained the network on frontal handwritten images
-- Random crops of 64 × 64 pixels from the input image of random sizes
-- Randomly mirror images in each forward-backward training pass
-- Data Augmentation is used
+- Resized every image to 200 × 200 pixels from the input images of random sizes
+- Converted each image from RGB to GrayScale to have a single channel using `cv2.cvtColor`
+- Thresholding the image so that it appears as white on a black background for better feature extraction using `cv2.threshold`
 
 ## Model Description
 For **Age Classification**, following are the details of the model: 
@@ -37,6 +37,7 @@ Used OpenCV library for image processing along with data visualization and augme
 4.Numpy</br>
 5.Seaborn</br>
 6.Matplotlib</br>
+7.Imutils</br>
 
 ## Results
 
