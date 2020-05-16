@@ -36,3 +36,6 @@ Wave Test Accuracy : **76.66**
 
 ![](output_images/wave_output_montage2.png)
 
+## Contributors
+-Rohan Limaye: https://github.com/rylp </br>
+-Rohan Naik: https://github.com/rohan-naik07 
