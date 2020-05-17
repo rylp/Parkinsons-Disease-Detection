@@ -32,7 +32,7 @@ Spiral Test Accuracy : **86.66%**
 ![](output_images/spiral_output_montage.png)
 ---
 
-Wave Test Accuracy : **76.66**
+Wave Test Accuracy : **76.66%**
 
 ![](output_images/wave_output_montage2.png)
 
